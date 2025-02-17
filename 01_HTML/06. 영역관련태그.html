@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+        }
+        .pink{
+            background-color: pink;
+        }
+        .yellow {
+            background-color: yellow;
+        }
+        .orange {
+            background-color: orange;
+        }
+        span {
+            border: 1px dotted;
+            width: 200px;
+            height: 200px;
+            /*
+                인라인 요소에서는 가로, 세로 길이지정 불가
+            */
+        }
+    </style>
+    <title>영역관련 태그</title>
+</head>
+<body>
+    <!--
+        블럭 요소 : 한줄 단위로 영역 차지
+                    줄바꿈이 적용되어 있는 태그
+                    (p, pre, h~, div..., )
+        인라인 요소 : content(내용)영역에 해당하는 부분만 영역 차지
+                     줄바꿈이 적용되지 않아 옆으로 영역이 잡힘(다음줄로 넘기려면 br을 작성)
+                    (img, b,)
+    -->
+    <h1>영역관련 태그</h1>
+    <h2>div태그와 span태그의 차이점1 : 줄바꿈 적용</h2>
+    <h3>div 태그</h3>
+
+    <p>블럭요소로 한줄 단위로 영역 차지</p>
+    <div class="pink">첫번째 영역</div>
+    <div class="yellow">두번째 영역</div>
+    <div class="orange">세번째 영역</div>
+
+    <h3>span 태그</h3>
+    <p>인라인 요소로 content영역만 차지</p>
+    <span class="pink">첫번째 영역</span>
+    <span class="yellow">두번째 영역</span>
+    <span class="orange">세번째 영역</span>
+
+    <hr>
+    <h2>div태그와 span태그의 차이점2 : 영역지정 방식</h2>
+    <h3>div 태그 : 사각형 박스로 영역 지정</h3>
+    <div>333322</div>
+    <p><span>45345345453eeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</span></p>
+
+    <h3>span 태그 : 문장 단위로 영역 지정</h3>
+    <span>2323311313aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span>
+
+    <h1>iframe</h1>
+    <p>웹 문서 안에 다른 웹 페이지를 추가하는 태그(인라인 요소)</p>
+    <iframe src="02. 글자태그.html" width="800" height="400"></iframe>
+    <br><br><br><br><br><br><br>
+
+    <!-- 유튜브 : 소스복사하여 넣기-->
+    <iframe width="703" height="395" src="https://www.youtube.com/embed/I24GTW0O_hc" title="Playlistㅣ재즈 UP 능률 UP 🙌ㅣ적당히 신나고 듣기 좋은 경쾌한 카페 음악ㅣ작업할 때, 공부할 때, 집중할 때 ✍ㅣJazz Background Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
