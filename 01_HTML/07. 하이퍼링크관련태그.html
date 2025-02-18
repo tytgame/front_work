@@ -43,9 +43,9 @@
     <!--
         <img src="이미지 url" usemap="#맵이름">
         <map name="맵이름">
-            <area shape="모양" coords="시작위치", 끝위치" href="링크경로" target="위치">
-            <area shape="모양" coords="시작위치", 끝위치" href="링크경로" target="위치"> 
-            <area shape="모양" coords="시작위치", 끝위치" href="링크경로" target="위치">
+            <area shape="모양" coords="시작위치, 끝위치" href="링크경로" target="위치">
+            <area shape="모양" coords="시작위치, 끝위치" href="링크경로" target="위치"> 
+            <area shape="모양" coords="시작위치, 끝위치" href="링크경로" target="위치">
         </map>
 
         shape 속성
@@ -55,43 +55,48 @@
         - default : 전체
     -->
 
-    <img src="resources/img/img02.jpg" width="500">
+    <img src="resources/img/img01.png" usemap="#imgmap">
     <map name="imgmap">
-        <area shape="rect" coords="0,0,250,300" href="https://google.com">
-        <area shape="rect" coords="0,0,250,300" href="https://google.com">
+        <area shape="rect" coords="0,0,250,300" href="https://google.com" target="_blank">
+        <area shape="rect" coords="250,0,300,400" href="https://google.com" target="_blank">
     </map>
 
-    <h3 id="맨위">현재 페이지내에서 점프하는 링크 만들기</h3>
+    <!-- https://www.image-map.net/   x,y 좌표 생성 -->
 
+    <img src="https://www.seoulsolution.kr/sites/all/themes/seoulsolution/images/static/seoul_district_map_ko_0.png" usemap="#gangnam">
+    <map name="gangnam">
+        <area target="_blank" alt="강남구청" title="강남구청" href="https://www.gangnam.go.kr/main.do" coords="278,279,282,286,285,291,285,298,287,302,292,308,293,313,293,320,294,326,296,334,302,338,310,342,314,345,315,353,316,361,320,367,328,368,333,368,339,362,344,359,351,357,357,359,360,365,362,372,367,376,371,380,376,382,385,383,390,381,395,375,401,373,406,371,397,361,393,354,390,347,390,341,380,333,376,326,365,323,351,317,342,307,341,297,339,285,326,277,313,272,303,268,288,269" shape="poly">
+    </map>
+
+    <hr>
+
+
+    <h3 id="맨위">현재 페이지내에서 점프하는 링크 만들기</h3>
+    <!-- ul>(li>a[href=#con$]{본문$})*5 -->
     <ul>
-        <li><a href="#cons1">본문1</a></li>
-        <li><a href="#cons2">본문2</a></li>
-        <li><a href="#cons3">본문3</a></li>
-        <li><a href="#cons4">본문4</a></li>
-        <li><a href="#cons5">본문5</a></li>
+        <li><a href="#con1">본문1</a></li>
+        <li><a href="#con2">본문2</a></li>
+        <li><a href="#con3">본문3</a></li>
+        <li><a href="#con4">본문4</a></li>
+        <li><a href="#con5">본문5</a></li>
     </ul>
 
+    <h4 id="con1">본문1</h4>
+    <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo aperiam earum est repellendus ipsa enim asperiores veniam et eligendi voluptatum maxime, tempora distinctio esse laudantium ducimus dignissimos, iure inventore culpa.</span><span>Libero nemo esse obcaecati vel ullam. Nihil cum ab placeat perferendis excepturi repellendus nisi reiciendis sapiente fugit. Aperiam animi omnis impedit adipisci error. Consequatur, architecto ea soluta nostrum mollitia libero.</span><span>Error ad reprehenderit cumque dolorum rerum architecto ullam incidunt accusamus eveniet id illo in beatae consequuntur non odit sint enim, excepturi earum alias. Illo repellat exercitationem officiis error deleniti quam!</span><span>Id in earum, ab maiores magnam inventore! Velit, quaerat dolor, optio, ab sint blanditiis aut ipsa quibusdam nisi provident commodi nemo excepturi. Eveniet corporis dicta, doloribus harum similique delectus dolore.</span><span>Nesciunt ea non, magni neque repudiandae itaque consequuntur quos numquam veniam! Nulla ut excepturi totam sit sapiente rem aut suscipit sunt quos, architecto explicabo aliquam recusandae amet natus repudiandae perferendis!</span></p>
 
-    <h4>본문1</h4>
-    <p><span>           </span></p>
+    <h4 id="con2">본문2</h4>
+    <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo aperiam earum est repellendus ipsa enim asperiores veniam et eligendi voluptatum maxime, tempora distinctio esse laudantium ducimus dignissimos, iure inventore culpa.</span><span>Libero nemo esse obcaecati vel ullam. Nihil cum ab placeat perferendis excepturi repellendus nisi reiciendis sapiente fugit. Aperiam animi omnis impedit adipisci error. Consequatur, architecto ea soluta nostrum mollitia libero.</span><span>Error ad reprehenderit cumque dolorum rerum architecto ullam incidunt accusamus eveniet id illo in beatae consequuntur non odit sint enim, excepturi earum alias. Illo repellat exercitationem officiis error deleniti quam!</span><span>Id in earum, ab maiores magnam inventore! Velit, quaerat dolor, optio, ab sint blanditiis aut ipsa quibusdam nisi provident commodi nemo excepturi. Eveniet corporis dicta, doloribus harum similique delectus dolore.</span><span>Nesciunt ea non, magni neque repudiandae itaque consequuntur quos numquam veniam! Nulla ut excepturi totam sit sapiente rem aut suscipit sunt quos, architecto explicabo aliquam recusandae amet natus repudiandae perferendis!</span></p>
 
+    <h4 id="con3">본문3</h4>
+    <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo aperiam earum est repellendus ipsa enim asperiores veniam et eligendi voluptatum maxime, tempora distinctio esse laudantium ducimus dignissimos, iure inventore culpa.</span><span>Libero nemo esse obcaecati vel ullam. Nihil cum ab placeat perferendis excepturi repellendus nisi reiciendis sapiente fugit. Aperiam animi omnis impedit adipisci error. Consequatur, architecto ea soluta nostrum mollitia libero.</span><span>Error ad reprehenderit cumque dolorum rerum architecto ullam incidunt accusamus eveniet id illo in beatae consequuntur non odit sint enim, excepturi earum alias. Illo repellat exercitationem officiis error deleniti quam!</span><span>Id in earum, ab maiores magnam inventore! Velit, quaerat dolor, optio, ab sint blanditiis aut ipsa quibusdam nisi provident commodi nemo excepturi. Eveniet corporis dicta, doloribus harum similique delectus dolore.</span><span>Nesciunt ea non, magni neque repudiandae itaque consequuntur quos numquam veniam! Nulla ut excepturi totam sit sapiente rem aut suscipit sunt quos, architecto explicabo aliquam recusandae amet natus repudiandae perferendis!</span></p>
 
+    <h4 id="con4">본문4</h4>
+    <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo aperiam earum est repellendus ipsa enim asperiores veniam et eligendi voluptatum maxime, tempora distinctio esse laudantium ducimus dignissimos, iure inventore culpa.</span><span>Libero nemo esse obcaecati vel ullam. Nihil cum ab placeat perferendis excepturi repellendus nisi reiciendis sapiente fugit. Aperiam animi omnis impedit adipisci error. Consequatur, architecto ea soluta nostrum mollitia libero.</span><span>Error ad reprehenderit cumque dolorum rerum architecto ullam incidunt accusamus eveniet id illo in beatae consequuntur non odit sint enim, excepturi earum alias. Illo repellat exercitationem officiis error deleniti quam!</span><span>Id in earum, ab maiores magnam inventore! Velit, quaerat dolor, optio, ab sint blanditiis aut ipsa quibusdam nisi provident commodi nemo excepturi. Eveniet corporis dicta, doloribus harum similique delectus dolore.</span><span>Nesciunt ea non, magni neque repudiandae itaque consequuntur quos numquam veniam! Nulla ut excepturi totam sit sapiente rem aut suscipit sunt quos, architecto explicabo aliquam recusandae amet natus repudiandae perferendis!</span></p>
 
+    <h4 id="con5">본문5</h4>
+    <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo aperiam earum est repellendus ipsa enim asperiores veniam et eligendi voluptatum maxime, tempora distinctio esse laudantium ducimus dignissimos, iure inventore culpa.</span><span>Libero nemo esse obcaecati vel ullam. Nihil cum ab placeat perferendis excepturi repellendus nisi reiciendis sapiente fugit. Aperiam animi omnis impedit adipisci error. Consequatur, architecto ea soluta nostrum mollitia libero.</span><span>Error ad reprehenderit cumque dolorum rerum architecto ullam incidunt accusamus eveniet id illo in beatae consequuntur non odit sint enim, excepturi earum alias. Illo repellat exercitationem officiis error deleniti quam!</span><span>Id in earum, ab maiores magnam inventore! Velit, quaerat dolor, optio, ab sint blanditiis aut ipsa quibusdam nisi provident commodi nemo excepturi. Eveniet corporis dicta, doloribus harum similique delectus dolore.</span><span>Nesciunt ea non, magni neque repudiandae itaque consequuntur quos numquam veniam! Nulla ut excepturi totam sit sapiente rem aut suscipit sunt quos, architecto explicabo aliquam recusandae amet natus repudiandae perferendis!</span></p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a href="#맨위">위로 올라가기</a><br>
+    <a href="#top">맨위로</a><!-- id를 만들지 않아도 됨. html에서 제공해 줌-->
 </body>
 </html>
