@@ -19,6 +19,27 @@
         #inner {
             color :lime;
         }
+
+        input[name^=user]:focus {
+        background-color: lime;
+        }
+
+        #test1 {
+            width: 100px;
+            height: 100px;
+            padding: 10px 20px 30px;
+            border-style: solid;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 10;
+            border-bottom-right-radius: 2px;
+            border-bottom-left-radius: 15px;
+            margin: 20px
+        }
+        #buttonLogin {
+            border-radius: 5px;
+
+        }
+
     </style>
 </head>
 <body>
@@ -29,6 +50,21 @@
     <h2 style="color:darkmagenta; font-size: 30px;">인라인 스타일 방식</h2>
 
     <h2 id="outer">외부 스타일 방식</h2>
-    
+
+    <hr>
+
+    <form>
+    ID &ensp; <input name="userId"><br>
+    PW &ensp;<input type="password" name="userPw">
+
+    <hr>
+    <br><br>
+
+    <div id="test1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <br>
+    <button type="submit" id="buttonLogin">로그인</button> &emsp;
+    <button type="reset" id="buttonReset">초기화</button>
+    </form>
+
 </body>
 </html>
