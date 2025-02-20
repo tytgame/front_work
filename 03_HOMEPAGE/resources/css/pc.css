@@ -1,0 +1,63 @@
+/* body */
+body {
+    width : 1000px;
+    border: 1px solid;
+}
+/* header */
+header {
+    height: 350px;
+}
+#logo {
+    float: left;
+    height: 30px;
+    margin: 5px 0;
+}
+header>form {
+    float: right;
+    margin-top: 5px;
+}
+#titleImg {
+    clear:both;
+    height: 310px;
+    width: 100%;
+}
+/* navi */
+.navi {
+    width: 1000px;
+    height: 60px;
+    background-color: rgb(133, 133, 133);
+}
+.navi a{
+    color: white;
+    display: inline-block;
+    height: 60px;
+    width: 245px;
+    text-align: center;
+    line-height: 60px;
+    border: 1px solid;
+}
+section {
+    float: left;
+    width: 340px;
+}
+#imgs {
+    border: 1px solid;
+    width: 600px;
+    height: 300px;
+    float: right;
+    /* height: 150px;
+    width: 120px; */
+}
+/* aside {
+    width: 100%;
+    height: 157px;
+} */
+
+/* .img {
+   display: block; 
+    object-fit: cover;
+} */
+footer {
+    clear: both;
+    background-color: rgb(133, 133, 133);
+}
