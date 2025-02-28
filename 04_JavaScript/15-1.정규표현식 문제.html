@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    *아이디 : &emsp;<input id="id"><br><br>
+    
+    첫글자는 반드시 영문자하고 영문자,숫자 포함 총 4~12자로 입력하시오<br><br>
+
+    *비밀번호: &emsp;<input type="password" id="password"><br><br>
+
+    영문자, 숫자, 특수문자로 총 8~15자로 입력하시오<br><br>
+
+    *비밀번호 확인: &emsp;<input type="password" id="check_password"><br><br>
+
+    위의 비밀번호와 일치하게 입력하시오<br><br>
+
+    * 이름 : &emsp;<input id="name"><br><br>
+
+    한글로만 이루어져 있어야 되며 2글자 이상으로 입력하시오<br><br>
+
+    * 이메일: &emsp;<input id="email"><br><br>
+
+    이메일 형식에 맞춰 입력하시오<br><br>
+
+    * 취미: &emsp;<input id="hobby"><br><br>
+
+    * 거주지: <input id="address"><br><br>
+
+    <button onclick="register();" id="register">회원가입</button>&emsp;<button id="cancel">취소</button>
+
+    <script>
+        function register() {
+            let id = document.getElementById('id').value;
+            let password = document.getElementById('password').value;
+            let check_password = document.getElementById('check_password').value;
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let hobby = document.getElementById('hobby').value;
+            let address = document.getElementById('address').value;
+
+            condi_id = /^[A-Za-z]([A-Za-z0-9]{3,11})$/;
+            condi_password = /^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[\[\]\{\}\/\(\)\.\?\<\>!@#$%^&*]).{8,15}$/;
+
+
+
+
+
+
+            if(!(condi_id.test(id))) {
+                alert('아이디가 양식에 맞지 않습니다');
+                return false;
+            }
+            if(!(condi_password.test(password))) {
+                alert('비밀번호가 양식에 맞지 않습니다');
+                return false;
+            }
+            
+        }
+    </script>
+</body>
+</html>
