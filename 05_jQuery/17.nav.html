@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+    <title>nav 애니메이션</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            width: 200px;
+            height: 50px;
+            display: inline-block;
+        }
+        li {
+            text-decoration: none;
+            width: 200px;
+            height: 50px;
+            float: left;
+            background-color: #9acd32;
+            text-align: center;
+
+        }
+    </style>
+
+    <script>
+        $(() => {
+            $('li a').hover(function(){
+
+                $(this).stop().animate({'background-color': '#005E75', 'color': 'white'}, 1000);
+            }, function(){
+                $(this).stop().animate({'background-color': '#9acd32', 'color': 'black'}, 1000);
+            });
+        })
+    </script>
+</head>
+<body>
+    <ul>
+        <li><a href="01.jQuery개요.html">Home</a></li>
+        <li><a href="02.요소선택자(기본선택자).html">About</a></li>
+        <li><a href="03.요소선택(추가적선택자).html">Portfolio</a></li>
+        <li><a href="04.요소선택(필터링관련선택자).html">Contact</a></li>
+    </ul>
+</body>
+</html>
